@@ -1,0 +1,255 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #242524;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cidades-container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.cidades-container div {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #242524;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(95, 97, 95);
+}
+
+hr {
+  margin: 10px 0;
+}
+
+#selecao {
+  display: none;
+  text-align: center;
+  padding: 50px 0;
+}
+
+#selecao h1 {
+  color: #f7f3f3; 
+  font-size: 36px;
+  margin-bottom: 20px; 
+}
+
+#selecao button {
+  background-color: #292b29;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#selecao button:hover {
+  background-color: rgb(58, 61, 58);
+}
+
+.message {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.error {
+  color: red;
+}
+.success {
+  color: green;
+
+}
+
+#secaoLogin, #secaoRegistro {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px; 
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+#secaoLogin, #secaoRegistro h2 {
+  text-align: center;
+}
+
+#secaoLogin, #secaoRegistro {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+#formaLogin, #formaRegistro {
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+#formaLogin input, #formaRegistro input {
+  width: 100%; 
+  margin-bottom: 10px; 
+}
+
+#formaLogin button, #formaRegistro button {
+  width: 100%; 
+  margin-top: 10px; 
+}
+
+#formaLogin button, #formaRegistro button {
+  background-color: rgb(61, 65, 61);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#formaLogin button:hover, #formaRegistro button:hover {
+  background-color: #2b4553;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: -22px;
+  justify-content: end;
+  display: flex;
+}
+
+.modal-content h2{
+  margin: 0;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cidade-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.cidade-container > div {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.cidade-container p {
+  margin: 5px 0;
+}
+
+.cidade-container button {
+  background-color: #252323; 
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cidade-container button:hover {
+  background-color: #929090;
+}
