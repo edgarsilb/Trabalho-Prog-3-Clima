@@ -1,0 +1,54 @@
+<!--  index.html -->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Previsão do Tempo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="wrapper_login" style="display: flex; flex-direction: column; justify-content: center; align-content: center; gap: 2rem;">
+    <div id="secaoLogin">
+      <h2>Login</h2>
+      <form id="formaLogin">
+        <input type="text" id="nomelogin" placeholder="nome" required>
+        <input type="password" id="senhalogin" placeholder="senha" required>
+        <button type="button" onclick="login()">Login</button>
+        <div id="mensagemaposlogin" class="message"></div>
+      </form>
+    </div>
+
+    <div id="secaoRegistro">
+      <h2>Registrar</h2>
+      <form id="formaRegistro">
+        <input type="text" id="nomeregistro" placeholder="nome" required>
+        <input type="password" id="senharegistro" placeholder="senha" required>
+        <button type="button" onclick="registrar()">Registrar</button>
+      </form>
+    </div>
+</div>
+  <div id="selecao">
+    <h1>Previsão do Tempo</h1>
+    <button onclick="abrirModalCidade()">Adicionar Cidade</button>
+    <div id="cidades" style="display: flex;
+    flex-flow: wrap; padding: 3rem;
+    gap: 1rem;" ></div>
+  </div>
+  
+  <div id="modalCidade" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModalCidade()">&times;</span>
+      <h2>Adicionar Cidade</h2>
+      <input type="text" id="nomeCidade" placeholder="Nome da Cidade">
+      <button onclick="adicionarCidade()">Adicionar</button>
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
